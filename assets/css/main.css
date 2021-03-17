@@ -218,4 +218,13 @@ body .calculator .buttons .row .button.take2 {
   border-radius: 50px;
   grid-column: span 2;
 }
+
+@media (max-width: 480px) {
+  .circle {
+    display: none;
+  }
+  .square {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -189,3 +189,14 @@ body {
         }
     }
 }
+
+
+@media (max-width: 480px) {
+    .circle {
+        display: none;
+    }
+
+    .square {
+        display: none;
+    }
+}
