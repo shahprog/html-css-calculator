@@ -27,6 +27,68 @@ body {
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
     position: relative;
+    overflow: hidden;
+
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.8;
+        &.one {
+            top: -100px;
+            left: -100px;
+            width: 500px;
+            height: 500px;
+            background: var(--red);
+        }
+
+        &.two {
+            top: 180px;
+            left: 180px;
+            width: 300px;
+            height: 300px;
+            background: var(--yellow);
+        }
+
+        &.three {
+            top: 200px;
+            right: 180px;
+            width: 20px;
+            height: 20px;
+            background: var(--red);
+        }
+
+        &.four {
+            top: 300px;
+            right: 300px;
+            width: 60px;
+            height: 60px;
+            background: var(--yellow);
+        }
+    }
+
+    .square {
+        position: absolute;
+        opacity: 0.8;
+
+        &.one {
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+            top: 70%;
+            right: -20px;
+            background: var(--blue);
+        }
+
+        &.two {
+            width: 300px;
+            height: 100px;
+            right: -40px;
+            bottom: -20px;
+            border-radius: 50px;
+            opacity: 0.5;
+            background: var(--blue);
+        }
+    }
 
     .calculator {
         width: 350px;
@@ -35,6 +97,10 @@ body {
         backdrop-filter: "blur";
         border-radius: 30px;
         padding: 20px;
+        z-index: 99;
+        -webkit-box-shadow: 0px 0px 19px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 19px -8px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 19px -8px rgba(0,0,0,0.75);
 
         .display {
             width: 100%;
