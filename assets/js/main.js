@@ -57,10 +57,26 @@ buttons.addEventListener('click', e => {
 
         if (e.target.classList.contains('equal')) {
             if (formula == ''){
+                e.target.classList.add('animate__animated')
+                e.target.classList.add('animate__shakeX')
+
+                setTimeout(x => {
+                    e.target.classList.remove('animate__animated')
+                    e.target.classList.remove('animate__shakeX')
+                }, 1000)
+
                 return
             }
 
             else if (equal_pressed) {
+                e.target.classList.add('animate__animated')
+                e.target.classList.add('animate__shakeX')
+
+                setTimeout(x => {
+                    e.target.classList.remove('animate__animated')
+                    e.target.classList.remove('animate__shakeX')
+                }, 1000)
+
                 return
             }
             
@@ -89,6 +105,15 @@ buttons.addEventListener('click', e => {
                 if (formula_visual.includes('.') == false) {
                     dot_pressed = false
                 }   
+            }else{
+                e.target.classList.add('animate__animated')
+                e.target.classList.add('animate__shakeX')
+
+                setTimeout(x => {
+                    e.target.classList.remove('animate__animated')
+                    e.target.classList.remove('animate__shakeX')
+                }, 1000)
+                
             }
         }
 

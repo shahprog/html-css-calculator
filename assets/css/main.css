@@ -206,6 +206,11 @@ body .calculator .buttons .row .button.operands {
   background: #dfe6e9;
 }
 
+body .calculator .buttons .row .button.equal {
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+}
+
 body .calculator .buttons .row .button.take2 {
   background: var(--blue);
   width: 100%;

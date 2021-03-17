@@ -173,6 +173,10 @@ body {
                         background: #dfe6e9;
                     }
 
+                    &.equal {
+                        animation-duration: .7s;
+                    }
+
                     &.take2 {
                         background: var(--blue);
                         width: 100%;
