@@ -204,6 +204,7 @@ body .calculator .buttons .row .button.blue {
 body .calculator .buttons .row .button.operands {
   color: #636e72;
   background: #dfe6e9;
+  font-size: 20px;
 }
 
 body .calculator .buttons .row .button.equal {
